@@ -21,18 +21,18 @@ const AboutUs = () => {
             <Header/>
             
             {/* Hero Section */}
-            <section className="relative h-96 bg-gradient-to-r from-blue-900 to-blue-800 overflow-hidden">
+            <section className="relative h-96  overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://readdy.ai/api/search-image?query=Professional%20sports%20training%20facility%20with%20modern%20equipment%20athletes%20training%20in%20background%20clean%20minimal%20design%20with%20blue%20and%20orange%20color%20scheme%20modern%20architecture&width=1440&height=400&seq=hero-about&orientation=landscape"
+                        src="https://i.postimg.cc/mZJ4Hk1p/7d8787172662ed7b86e743b3b5cefa67.jpg"
                         alt="Sports Training Facility"
                         className="w-full h-full object-cover object-top opacity-30"
                     />
                 </div>
                 <div className="relative max-w-7xl mx-auto px-6 h-full flex items-center">
-                    <div className="text-white max-w-2xl">
-                        <h1 className="text-5xl font-bold mb-6">Equal Opportunity in Sports</h1>
-                        <p className="text-xl mb-8 text-blue-100">
+                    <div className="text-black max-w-2xl">
+                        <h1 className="text-5xl font-bold mb-6 ">Equal Opportunity in Sports</h1>
+                        <p className="text-xl mb-8 text-black">
                             Chance2Sports drives various initiatives through its two arms: RNSF and Champions Gurukul,
                             creating pathways for athletes to achieve their dreams.
                         </p>
