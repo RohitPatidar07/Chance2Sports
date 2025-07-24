@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className="relative z-10 mx-auto px-6 py-16">
                     <div className="grid md:grid-cols-3 gap-12">
                         <div>
-                            <h3 className="font-orbitron text-2xl font-bold mb-4">Champion2Society</h3>
+                            <h3 className="font-orbitron text-2xl font-bold mb-4">Chance2Sports</h3>
                             <p className="font-inter mb-6">
                                 Providing free training, mentorship, and educational opportunities to young athletes since 2010.
                                 Building champions from all backgrounds.
@@ -43,7 +43,8 @@ const Footer = () => {
                                 <li><Link to="/" className="font-inter hover:text-orange-400 transition-colors cursor-pointer">Home</Link></li>
                                 <li><Link to="/aboutus" className="font-inter hover:text-orange-400 transition-colors cursor-pointer">About Us</Link></li>
                                 <li><Link to="/grassrootstalent" className="font-inter hover:text-orange-400 transition-colors cursor-pointer">Grassroots Talent Program</Link></li>
-                                <li><Link to="/championsclub " className="font-inter hover:text-orange-400 transition-colors cursor-pointer">Champions ClubElite Pass</Link></li>
+                                <li><Link to="/championsclub" className="font-inter hover:text-orange-400 transition-colors cursor-pointer">Champions ClubElite Pass</Link></li>
+                               <li><Link to="/newsletter" className="font-inter hover:text-orange-400 transition-colors cursor-pointer">Newsletters & Events</Link></li>
                                 <li><Link to="/contactus" className="font-inter hover:text-orange-400 transition-colors cursor-pointer">Contact</Link></li>
                             </ul>
                         </div>
@@ -70,7 +71,7 @@ const Footer = () => {
                     </div>
                     <div className="border-t border-gray-700 mt-12 pt-8 text-center">
                         <p className="font-inter">
-                            © 2024 Champion2Society. All rights reserved. Empowering champions since 2010.
+                            © 2024 Chance2Sports . All rights reserved. Empowering champions since 2010.
                         </p>
                     </div>
                 </div>

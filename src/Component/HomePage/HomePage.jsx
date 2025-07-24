@@ -141,7 +141,7 @@ const HomePage = () => {
                                 Real <span className="text-orange-600">Champions</span>.
                             </h1>
                             <p className="font-inter text-xl mb-8 text-slate-600 text-reveal" style={{ animationDelay: '0.3s' }}>
-                                For over 14 years, Champion2Society has provided <strong>completely free training, mentorship, and educational opportunities</strong> to young athletes from all backgrounds, transforming dreams into reality.
+                                For over 14 years, Chance2Sports  has provided <strong>completely free training, mentorship, and educational opportunities</strong> to young athletes from all backgrounds, transforming dreams into reality.
                             </p>
                             {/* Impact Stats */}
                             <div className="grid grid-cols-3 gap-6 mb-8 text-reveal" style={{ animationDelay: '0.6s' }}>

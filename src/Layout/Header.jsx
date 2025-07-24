@@ -56,7 +56,7 @@ const Header = () => {
                             <Link to="/aboutus" className="text-slate-700 hover:text-orange-600 transition-colors font-inter font-medium cursor-pointer">About Us</Link>
                             <Link to="/grassrootstalent" className="text-slate-700 hover:text-orange-600 transition-colors font-inter font-medium cursor-pointer">Grassroots Talent Program</Link>
                             <Link to="/championsclub" className="text-slate-700 hover:text-orange-600 transition-colors font-inter font-medium cursor-pointer">Champions Club ElitePass</Link>
-                            <Link to="/" className="text-slate-700 hover:text-orange-600 transition-colors font-inter font-medium cursor-pointer">Newsletters & Events</Link>
+                            <Link to="/newsletter" className="text-slate-700 hover:text-orange-600 transition-colors font-inter font-medium cursor-pointer">Newsletters & Events</Link>
                             <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 !rounded-button font-inter font-semibold pulse-glow hover:from-orange-600 hover:to-orange-700 transition-all whitespace-nowrap cursor-pointer">
                                 Donate / Join Us
                             </button>
@@ -74,10 +74,10 @@ const Header = () => {
                         <div className="lg:hidden mt-4 bg-slate-900/95 glass-morphism rounded-lg p-4">
                             <nav className="flex flex-col space-y-4">
                                 <Link to="/" className="text-white hover:text-orange-400 transition-colors font-inter cursor-pointer">Home</Link>
-                                <Link to="/" className="text-white hover:text-orange-400 transition-colors font-inter cursor-pointer">About Us</Link>
-                                <Link to="/" className="text-white hover:text-orange-400 transition-colors font-inter cursor-pointer">Grassroot Program</Link>
-                                <Link to="/" className="text-white hover:text-orange-400 transition-colors font-inter cursor-pointer">Champions Elite Program</Link>
-                                <Link to="/" className="text-white hover:text-orange-400 transition-colors font-inter cursor-pointer">Newsletters & Events</Link>
+                                <Link to="/aboutus" className="text-white hover:text-orange-400 transition-colors font-inter cursor-pointer">About Us</Link>
+                                <Link to="/grassrootstalent" className="text-white hover:text-orange-400 transition-colors font-inter cursor-pointer">Grassroot Program</Link>
+                                <Link to="/championsclub" className="text-white hover:text-orange-400 transition-colors font-inter cursor-pointer">Champions Elite Program</Link>
+                                <Link to="/newsletter" className="text-white hover:text-orange-400 transition-colors font-inter cursor-pointer">Newsletters & Events</Link>
                                 <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 !rounded-button font-inter font-semibold whitespace-nowrap cursor-pointer">
                                     Donate / Join Us
                                 </button>
