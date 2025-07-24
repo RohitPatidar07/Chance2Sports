@@ -75,7 +75,7 @@ const DonateJoinUs = () => {
                                                     : 'border-gray-300 hover:border-orange-300'
                                                     }`}
                                             >
-                                                ${amount}
+                                                {amount}
                                             </button>
                                         ))}
                                     </div>
@@ -84,7 +84,7 @@ const DonateJoinUs = () => {
                                 <div className="mb-6">
                                     <label className="block text-sm font-medium text-gray-700 mb-2">Custom Amount</label>
                                     <div className="relative">
-                                        <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">$</span>
+                                        {/* <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">$</span> */}
                                         <input
                                             type="text"
                                             value={customAmount}
@@ -98,10 +98,10 @@ const DonateJoinUs = () => {
                                 <div className="bg-orange-50 p-4 rounded-lg mb-6">
                                     <h4 className="font-semibold text-orange-800 mb-2">Your Impact:</h4>
                                     <ul className="text-sm text-orange-700 space-y-1">
-                                        <li>• $25 provides sports equipment for one athlete</li>
-                                        <li>• $50 covers one month of training sessions</li>
-                                        <li>• $100 sponsors competition entry fees</li>
-                                        <li>• $250 funds mentorship program for 3 months</li>
+                                        <li>• 25 provides sports equipment for one athlete</li>
+                                        <li>• 50 covers one month of training sessions</li>
+                                        <li>• 100 sponsors competition entry fees</li>
+                                        <li>• 250 funds mentorship program for 3 months</li>
                                     </ul>
                                 </div>
                                 <button className="w-full bg-orange-500 text-white py-4 !rounded-button font-semibold hover:bg-orange-600 whitespace-nowrap cursor-pointer">

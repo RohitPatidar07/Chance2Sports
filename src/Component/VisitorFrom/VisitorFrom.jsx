@@ -256,11 +256,11 @@ const VisitorFrom = () => {
                                 <div className="space-y-3">
                                     <div className="flex items-center">
                                         <i className="fas fa-envelope text-orange-500 w-5 mr-3"></i>
-                                        <span className="text-gray-600">info@freetraining.com</span>
+                                        <span className="text-gray-600">info@chance2support.com</span>
                                     </div>
                                     <div className="flex items-center">
                                         <i className="fas fa-phone text-orange-500 w-5 mr-3"></i>
-                                        <span className="text-gray-600">+1 (555) 123-4567</span>
+                                        <span className="text-gray-600">+91 1234567890</span>
                                     </div>
                                     <div className="flex items-center">
                                         <i className="fas fa-map-marker-alt text-orange-500 w-5 mr-3"></i>
@@ -275,7 +275,7 @@ const VisitorFrom = () => {
 
             {/* Support CTA */}
             <SupportCTA/>
-            
+
             {/* Footer */}
             <Footer />
         </div>
