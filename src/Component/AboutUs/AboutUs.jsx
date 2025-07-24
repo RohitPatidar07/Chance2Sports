@@ -19,7 +19,7 @@ const AboutUs = () => {
 
             {/* Header */}
             <Header/>
-            
+
             {/* Hero Section */}
             <section className="relative h-96  overflow-hidden">
                 <div className="absolute inset-0">
@@ -258,7 +258,7 @@ const AboutUs = () => {
             <SupportCTA/>
 
             {/* Footer */}
-            <Footer/>.      
+            <Footer/>      
         </div>
     );
 };
