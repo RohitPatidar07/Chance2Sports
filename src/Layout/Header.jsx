@@ -41,15 +41,20 @@ const Header = () => {
     }, [latestUpdates.length]);
     return (
         <>
-            <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+            <div className={`fixed top-0 left-0 right-0 z-50 mb-5 transition-all duration-300 ${isScrolled
                 ? 'bg-white/95 glass-morphism shadow-lg'
                 : 'bg-white/70'
                 }`}>
                 <div className="mx-auto px-6 py-4">
                     <div className="flex items-center justify-between">
-                        <div className="font-orbitron text-2xl font-bold text-orange-600">
-                            C2S
-                        </div>
+                     <div className="flex items-center">
+              <img
+                src="https://i.postimg.cc/rsXdykWf/Screenshot-2025-07-24-173613-removebg-preview.png" // 🔁 Replace with your actual image path
+                alt="C2S Logo"
+                className="h-12 w-auto object-contain"
+              />
+            </div>
+
                         {/* Desktop Navigation */}
                         <nav className="hidden lg:flex items-center space-x-8">
                             <Link to="/" className="text-slate-700 hover:text-orange-600 transition-colors font-inter font-medium cursor-pointer">Home</Link>
@@ -88,9 +93,8 @@ const Header = () => {
                         </div>
                     )}
                 </div>
-            </header>
+            </div>
         </>
     )
-}
-
+}        
 export default Header
