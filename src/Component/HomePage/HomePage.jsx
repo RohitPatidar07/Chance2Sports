@@ -1,5 +1,6 @@
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import "./HomePage.css"
 import Header from '../../Layout/Header';
 import Footer from '../../Layout/Footer';
@@ -159,12 +160,18 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col sm:flex-row gap-4 mb-8 text-reveal" style={{ animationDelay: '0.9s' }}>
+                              <Link to="/donatejoinus">
                                 <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 !rounded-button font-inter font-semibold pulse-glow hover:from-orange-600 hover:to-orange-700 transition-all whitespace-nowrap cursor-pointer">
                                     Join Our Programs
                                 </button>
+                              </Link>
+
+                             <Link to="/aboutus">
                                 <button className="neon-border bg-transparent px-8 py-4 !rounded-button font-inter font-semibold whitespace-nowrap cursor-pointer">
                                     Read More About Us
                                 </button>
+                             </Link>
+
                             </div>
                         </div>
                     </div>
@@ -252,9 +259,9 @@ const HomePage = () => {
                                                         <blockquote className="font-inter text-lg text-gray-700 italic leading-relaxed mb-8">
                                                             "{story.quote}"
                                                         </blockquote>
-                                                        <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 !rounded-button font-inter font-semibold self-start whitespace-nowrap cursor-pointer hover:from-orange-600 hover:to-orange-700 transition-all">
+                                                        {/* <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 !rounded-button font-inter font-semibold self-start whitespace-nowrap cursor-pointer hover:from-orange-600 hover:to-orange-700 transition-all">
                                                             View Full Story
-                                                        </button>
+                                                        </button> */}
                                                     </div>
                                                 </div>
                                             </div>
@@ -333,9 +340,9 @@ const HomePage = () => {
                                                         <p className="font-inter text-gray-700 leading-relaxed mb-6">
                                                             {update.excerpt}
                                                         </p>
-                                                        <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 !rounded-button font-inter font-semibold self-start whitespace-nowrap cursor-pointer hover:from-orange-600 hover:to-orange-700 transition-all">
+                                                        {/* <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 !rounded-button font-inter font-semibold self-start whitespace-nowrap cursor-pointer hover:from-orange-600 hover:to-orange-700 transition-all">
                                                             Read More
-                                                        </button>
+                                                        </button> */}
                                                     </div>
                                                 </div>
                                             </div>
@@ -416,7 +423,7 @@ const HomePage = () => {
                 </div>
             </section>
             {/* Support CTA Section */}
-          <SupportCTA/>
+            <SupportCTA />
             {/* Footer */}
             <Footer />
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const SupportCTA = () => {
     return (
         <>
@@ -25,12 +25,15 @@ const SupportCTA = () => {
                         Your donation keeps our programs completely free and creates the next generation of champions from all backgrounds
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                        <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-4 !rounded-button font-inter font-bold text-lg pulse-glow hover:from-orange-600 hover:to-orange-700 transition-all whitespace-nowrap cursor-pointer">
+                        <Link to="/donatejoinus">
+                         <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-4 !rounded-button font-inter font-bold text-lg pulse-glow hover:from-orange-600 hover:to-orange-700 transition-all whitespace-nowrap cursor-pointer">
                             Donate Now
                         </button>
-                        <button className="neon-border bg-transparent px-10 py-4 !rounded-button font-inter font-bold text-lg whitespace-nowrap cursor-pointer">
+                        </Link>
+                       
+                        {/* <button className="neon-border bg-transparent px-10 py-4 !rounded-button font-inter font-bold text-lg whitespace-nowrap cursor-pointer">
                             Help Them Rise
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </section>

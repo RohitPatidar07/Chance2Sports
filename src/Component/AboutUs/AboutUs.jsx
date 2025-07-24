@@ -1,5 +1,6 @@
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import SupportCTA from '../SupportCTA/SupportCTA';
 import Footer from '../../Layout/Footer';
 import Header from '../../Layout/Header';
@@ -36,14 +37,14 @@ const AboutUs = () => {
                             Chance2Sports drives various initiatives through its two arms: RNSF and Champions Gurukul,
                             creating pathways for athletes to achieve their dreams.
                         </p>
-                        <a
-                            href="https://rollingnicks.com/"
+                        <Link
+                            to="/donatejoinus"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block bg-orange-500 text-white px-8 py-3 !rounded-button hover:bg-orange-600 transition-colors cursor-pointer whitespace-nowrap"
                         >
-                            Learn More
-                        </a>
+                            Donate Now
+                        </Link>
                     </div>
                 </div>
             </section>
