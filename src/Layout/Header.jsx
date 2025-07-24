@@ -51,7 +51,7 @@ const Header = () => {
                             <img
                                 src="https://i.postimg.cc/rsXdykWf/Screenshot-2025-07-24-173613-removebg-preview.png" // 🔁 Replace with your actual image path
                                 alt="C2S Logo"
-                                className="h-12 w-auto object-contain"
+                                className="h-12 w-60 object-contain"
                             />
                         </div>
 
