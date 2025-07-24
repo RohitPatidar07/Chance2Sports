@@ -42,7 +42,7 @@ const Header = () => {
     return (
         <>
             <div className={`fixed top-0 left-0 right-0 z-50 mb-5 transition-all duration-300 ${isScrolled
-                ? 'bg-white/95 glass-morphism shadow-lg'
+                ? 'bg-white/100 glass-morphism shadow-lg'
                 : 'bg-white/70'
                 }`}>
                 <div className="mx-auto px-6 py-4">
