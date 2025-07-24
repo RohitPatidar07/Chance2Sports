@@ -43,7 +43,7 @@ const Header = () => {
         <>
             <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
                 ? 'bg-white/95 glass-morphism shadow-lg'
-                : 'bg-transparent'
+                : 'bg-white/70'
                 }`}>
                 <div className="mx-auto px-6 py-4">
                     <div className="flex items-center justify-between">
@@ -57,9 +57,12 @@ const Header = () => {
                             <Link to="/grassrootstalent" className="text-slate-700 hover:text-orange-600 transition-colors font-inter font-medium cursor-pointer">Grassroots Talent Program</Link>
                             <Link to="/championsclub" className="text-slate-700 hover:text-orange-600 transition-colors font-inter font-medium cursor-pointer">Champions Club ElitePass</Link>
                             <Link to="/newsletter" className="text-slate-700 hover:text-orange-600 transition-colors font-inter font-medium cursor-pointer">Newsletters & Events</Link>
-                            <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 !rounded-button font-inter font-semibold pulse-glow hover:from-orange-600 hover:to-orange-700 transition-all whitespace-nowrap cursor-pointer">
+                            <Link to="/donatejoinus">
+                             <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 !rounded-button font-inter font-semibold pulse-glow hover:from-orange-600 hover:to-orange-700 transition-all whitespace-nowrap cursor-pointer">
                                 Donate / Join Us
                             </button>
+                            </Link>
+                           
                         </nav>
                         {/* Mobile Menu Button */}
                         <button

@@ -6,6 +6,7 @@ import GrassrootsTalentProgram from "./Component/GrassrootsTalentProgram/Grassro
 import NewsletterEvents from "./Component/NewsletterEvents/NewsletterEvents";
 import Login from "./Auth/Login";
 import Signup from "./Auth/Signup";
+import DonateJoinUs from "./Component/DonateJoinUs/DonateJoinUs";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/championsclub" element={<ChampionsClubElitePass />} />
         <Route path="/grassrootstalent" element={<GrassrootsTalentProgram />} />
         <Route path="/newsletter" element={<NewsletterEvents />} />
+          <Route path="/donatejoinus" element={<DonateJoinUs />} />
       </Route>
 
       {/* Auth pages without Header/Footer */}
