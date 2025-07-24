@@ -41,19 +41,19 @@ const Header = () => {
     }, [latestUpdates.length]);
     return (
         <>
-            <div className={`fixed top-0 left-0 right-0 z-50 mb-5 transition-all duration-300 ${isScrolled
-                ? 'bg-white/100 glass-morphism shadow-lg'
+            <header className={`fixed top-0 left-0 right-0 z-50 mb-5 transition-all duration-300 ${isScrolled
+                ? 'bg-white/95 glass-morphism shadow-lg'
                 : 'bg-white/70'
                 }`}>
                 <div className="mx-auto px-6 py-4">
                     <div className="flex items-center justify-between">
-                     <div className="flex items-center">
-              <img
-                src="https://i.postimg.cc/rsXdykWf/Screenshot-2025-07-24-173613-removebg-preview.png" // 🔁 Replace with your actual image path
-                alt="C2S Logo"
-                className="h-12 w-auto object-contain"
-              />
-            </div>
+                        <div className="flex items-center">
+                            <img
+                                src="https://i.postimg.cc/rsXdykWf/Screenshot-2025-07-24-173613-removebg-preview.png" // 🔁 Replace with your actual image path
+                                alt="C2S Logo"
+                                className="h-12 w-60 object-contain"
+                            />
+                        </div>
 
                         {/* Desktop Navigation */}
                         <nav className="hidden lg:flex items-center space-x-8">
@@ -63,15 +63,15 @@ const Header = () => {
                             <Link to="/championsclub" className="text-slate-700 hover:text-orange-600 transition-colors font-inter font-medium cursor-pointer">Champions Club ElitePass</Link>
                             <Link to="/newsletter" className="text-slate-700 hover:text-orange-600 transition-colors font-inter font-medium cursor-pointer">Newsletters & Events</Link>
                             <Link to="/donatejoinus">
-                             <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 !rounded-button font-inter font-semibold pulse-glow hover:from-orange-600 hover:to-orange-700 transition-all whitespace-nowrap cursor-pointer">
-                                Donate / Join Us
-                            </button>
+                                <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 !rounded-button font-inter font-semibold pulse-glow hover:from-orange-600 hover:to-orange-700 transition-all whitespace-nowrap cursor-pointer">
+                                    Donate / Join Us
+                                </button>
                             </Link>
-                           
+
                         </nav>
                         {/* Mobile Menu Button */}
                         <button
-                            className="lg:hidden text-white cursor-pointer"
+                            className="lg:hidden cursor-pointer"
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         >
                             <i className={`fas ${mobileMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`}></i>
@@ -93,8 +93,11 @@ const Header = () => {
                         </div>
                     )}
                 </div>
-            </div>
+            </header>
+
+            {/* Spacer to push hero section down */}
+            <div className="mt-20"></div> {/* Adjust as needed based on header height */}
         </>
     )
-}        
+}
 export default Header
