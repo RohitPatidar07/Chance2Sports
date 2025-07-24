@@ -111,7 +111,7 @@ const NewsletterEvents = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
                 </div>
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center ">
                     <h1 className="text-5xl font-bold text-white mb-6">Newsletter & Events</h1>
                     <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
                         Stay updated with our latest news, success stories, and upcoming events.
@@ -120,7 +120,7 @@ const NewsletterEvents = () => {
                 </div>
             </div>
             {/* Tab Navigation */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 mt-5">
                 <div className="flex space-x-1 bg-gray-100 p-1 rounded-lg w-fit">
                     <button
                         onClick={() => setActiveTab('newsletters')}
@@ -145,7 +145,7 @@ const NewsletterEvents = () => {
                 </div>
             </div>
             {/* Content Area */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+            <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
                 {activeTab === 'newsletters' && (
                     <div>
                         {/* Filter and Sort */}

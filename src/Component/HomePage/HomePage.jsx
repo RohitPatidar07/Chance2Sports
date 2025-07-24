@@ -147,15 +147,15 @@ const HomePage = () => {
                             <div className="grid grid-cols-3 gap-6 mb-8 text-reveal" style={{ animationDelay: '0.6s' }}>
                                 <div className="text-center">
                                     <div className="stats-counter font-orbitron">2000+</div>
-                                    <p className="font-inter text-sm text-gray-300">Athletes Trained</p>
+                                    <p className="font-inter text-sm text-black-300">Athletes Trained</p>
                                 </div>
                                 <div className="text-center">
                                     <div className="stats-counter font-orbitron">500+</div>
-                                    <p className="font-inter text-sm text-gray-300">Scholarships Awarded</p>
+                                    <p className="font-inter text-sm text-black-300">Scholarships Awarded</p>
                                 </div>
                                 <div className="text-center">
                                     <div className="stats-counter font-orbitron">150+</div>
-                                    <p className="font-inter text-sm text-gray-300">Champions Created</p>
+                                    <p className="font-inter text-sm text-black-300">Champions Created</p>
                                 </div>
                             </div>
                             <div className="flex flex-col sm:flex-row gap-4 mb-8 text-reveal" style={{ animationDelay: '0.9s' }}>
@@ -172,7 +172,7 @@ const HomePage = () => {
             </section>
 
             {/* Programs Section */}
-            <section className="mt-5 bg-gray-50">
+            <section className="bg-gray-50">
                 <div className="p-5 mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="font-orbitron text-4xl font-bold text-slate-900 mb-4">Our Programs</h2>
@@ -404,8 +404,8 @@ const HomePage = () => {
                                 </p>
                             </div>
                             <div>
-                                <h3 className="font-poppins text-2xl font-semibold mb-4 text-white">Our Vision</h3>
-                                <p className="font-inter text-lg text-gray-200 leading-relaxed">
+                                <h3 className="font-orbitron text-4xl font-bold mb-6 text-orange-600">Our Vision</h3>
+                                <p className="font-inter text-lg text-slate-600 leading-relaxed">
                                     To create a world where every young athlete has access to quality training and mentorship,
                                     transforming not just individual lives but entire communities through the power of sports
                                     and the values it instills.
