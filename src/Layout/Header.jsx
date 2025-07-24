@@ -58,15 +58,15 @@ const Header = () => {
                             <Link to="/championsclub" className="text-slate-700 hover:text-orange-600 transition-colors font-inter font-medium cursor-pointer">Champions Club ElitePass</Link>
                             <Link to="/newsletter" className="text-slate-700 hover:text-orange-600 transition-colors font-inter font-medium cursor-pointer">Newsletters & Events</Link>
                             <Link to="/donatejoinus">
-                             <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 !rounded-button font-inter font-semibold pulse-glow hover:from-orange-600 hover:to-orange-700 transition-all whitespace-nowrap cursor-pointer">
-                                Donate / Join Us
-                            </button>
+                                <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 !rounded-button font-inter font-semibold pulse-glow hover:from-orange-600 hover:to-orange-700 transition-all whitespace-nowrap cursor-pointer">
+                                    Donate / Join Us
+                                </button>
                             </Link>
-                           
+
                         </nav>
                         {/* Mobile Menu Button */}
                         <button
-                            className="lg:hidden text-white cursor-pointer"
+                            className="lg:hidden cursor-pointer"
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         >
                             <i className={`fas ${mobileMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`}></i>
@@ -89,6 +89,9 @@ const Header = () => {
                     )}
                 </div>
             </header>
+
+            {/* Spacer to push hero section down */}
+            <div className="mt-20"></div> {/* Adjust as needed based on header height */}
         </>
     )
 }
