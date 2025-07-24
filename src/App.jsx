@@ -14,9 +14,9 @@ function App() {
       {/* Public routes with Header/Footer */}
       <Route>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/champions-club" element={<ChampionsClubElitePass />} />
-        <Route path="/grassroots-talent" element={<GrassrootsTalentProgram />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/championsclub" element={<ChampionsClubElitePass />} />
+        <Route path="/grassrootstalent" element={<GrassrootsTalentProgram />} />
         <Route path="/newsletter" element={<NewsletterEvents />} />
       </Route>
 
