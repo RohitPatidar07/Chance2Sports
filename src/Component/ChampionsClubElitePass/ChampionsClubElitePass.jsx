@@ -36,9 +36,9 @@ const ChampionsClubElitePass = () => {
                                     <div className="text-sm text-gray-600">International Medals</div>
                                 </div>
                             </div>
-                            <button className="bg-orange-500 text-white px-8 py-3 !rounded-button font-medium hover:bg-orange-600 transition-colors cursor-pointer whitespace-nowrap">
+                            {/* <button className="bg-orange-500 text-white px-8 py-3 !rounded-button font-medium hover:bg-orange-600 transition-colors cursor-pointer whitespace-nowrap">
                                 Learn More
-                            </button>
+                            </button> */}
                         </div>
                         <div className="relative">
                             <img

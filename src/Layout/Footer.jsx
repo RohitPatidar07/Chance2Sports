@@ -28,51 +28,64 @@ const Footer = () => {
                         />
                     </svg>
                 </div>
-                <div className="relative z-10 mx-auto px-6 py-16">
-                    <div className="grid md:grid-cols-3 gap-12">
+
+                {/* Footer Content */}
+                <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
+                    <div className="grid md:grid-cols-3 gap-10">
+                        {/* Logo + About */}
                         <div>
-                            <h3 className="font-orbitron text-2xl font-bold mb-4">Chance2Sports</h3>
-                            <p className="font-inter mb-6">
+                            <Link to="/" className="inline-block mb-4">
+                                <img
+                                    src="https://i.postimg.cc/rsXdykWf/Screenshot-2025-07-24-173613-removebg-preview.png"
+                                    alt="C2S Logo"
+                                    className="h-12 w-auto object-contain"
+                                />
+                            </Link>
+                            <p className="font-inter text-sm leading-relaxed">
                                 Providing free training, mentorship, and educational opportunities to young athletes since 2010.
                                 Building champions from all backgrounds.
                             </p>
                         </div>
+
+                        {/* Quick Links */}
                         <div>
                             <h4 className="font-poppins text-lg font-semibold mb-4">Quick Links</h4>
-                            <ul className="space-y-2">
-                                <li><Link to="/" className="font-inter hover:text-orange-400 transition-colors cursor-pointer">Home</Link></li>
-                                <li><Link to="/aboutus" className="font-inter hover:text-orange-400 transition-colors cursor-pointer">About Us</Link></li>
-                                <li><Link to="/grassrootstalent" className="font-inter hover:text-orange-400 transition-colors cursor-pointer">Grassroots Talent Program</Link></li>
-                                <li><Link to="/championsclub" className="font-inter hover:text-orange-400 transition-colors cursor-pointer">Champions ClubElite Pass</Link></li>
-                               <li><Link to="/newsletter" className="font-inter hover:text-orange-400 transition-colors cursor-pointer">Newsletters & Events</Link></li>
-                                <li><Link to="/contactus" className="font-inter hover:text-orange-400 transition-colors cursor-pointer">Contact</Link></li>
+                            <ul className="space-y-2 text-sm font-inter">
+                                <li><Link to="/" className="hover:text-orange-500 transition">Home</Link></li>
+                                <li><Link to="/aboutus" className="hover:text-orange-500 transition">About Us</Link></li>
+                                <li><Link to="/grassrootstalent" className="hover:text-orange-500 transition">Grassroots Talent Program</Link></li>
+                                <li><Link to="/championsclub" className="hover:text-orange-500 transition">Champions Club Elite Pass</Link></li>
+                                <li><Link to="/newsletter" className="hover:text-orange-500 transition">Newsletters & Events</Link></li>
+                                <li><Link to="/visitorfrom" className="hover:text-orange-500 transition">Contact</Link></li>
                             </ul>
                         </div>
+
+                        {/* Social Links */}
                         <div>
                             <h4 className="font-poppins text-lg font-semibold mb-4">Follow Us</h4>
-                            <div className="flex space-x-4">
-                                <a href="#" className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-500 transition-all cursor-pointer">
+                            <div className="flex flex-wrap gap-3">
+                                <a href="#" className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition">
                                     <i className="fab fa-linkedin text-white"></i>
                                 </a>
-                                <a href="#" className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-500 transition-all cursor-pointer">
+                                <a href="#" className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition">
                                     <i className="fab fa-facebook text-white"></i>
                                 </a>
-                                <a href="#" className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-500 transition-all cursor-pointer">
+                                <a href="#" className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition">
                                     <i className="fab fa-instagram text-white"></i>
                                 </a>
-                                <a href="#" className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-500 transition-all cursor-pointer">
+                                <a href="#" className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition">
                                     <i className="fab fa-pinterest text-white"></i>
                                 </a>
-                                <a href="#" className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-500 transition-all cursor-pointer">
+                                <a href="#" className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition">
                                     <i className="fab fa-twitter text-white"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div className="border-t border-gray-700 mt-12 pt-8 text-center">
-                        <p className="font-inter">
-                            © 2024 Chance2Sports . All rights reserved. Empowering champions since 2010.
-                        </p>
+
+                    {/* Bottom Bar */}
+                    <div className="border-t border-gray-300 mt-12 pt-6 text-center text-sm font-inter">
+                        © 2025 <span className="font-semibold text-orange-600">Chance2Sports</span>. All rights reserved. Empowering champions since 2010.
                     </div>
                 </div>
             </div>

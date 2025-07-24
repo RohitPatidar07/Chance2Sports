@@ -47,6 +47,7 @@ const Header = () => {
                 }`}>
                 <div className="mx-auto px-6 py-4">
                     <div className="flex items-center justify-between">
+                       <Link to="/">
                         <div className="flex items-center">
                             <img
                                 src="https://i.postimg.cc/rsXdykWf/Screenshot-2025-07-24-173613-removebg-preview.png" // 🔁 Replace with your actual image path
@@ -54,6 +55,7 @@ const Header = () => {
                                 className="h-12 w-60 object-contain"
                             />
                         </div>
+                       </Link>
 
                         {/* Desktop Navigation */}
                         <nav className="hidden lg:flex items-center space-x-8">
