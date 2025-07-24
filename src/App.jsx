@@ -7,6 +7,7 @@ import NewsletterEvents from "./Component/NewsletterEvents/NewsletterEvents";
 import Login from "./Auth/Login";
 import Signup from "./Auth/Signup";
 import DonateJoinUs from "./Component/DonateJoinUs/DonateJoinUs";
+import VisitorFrom from "./Component/VisitorFrom/VisitorFrom";
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
         <Route path="/championsclub" element={<ChampionsClubElitePass />} />
         <Route path="/grassrootstalent" element={<GrassrootsTalentProgram />} />
         <Route path="/newsletter" element={<NewsletterEvents />} />
-          <Route path="/donatejoinus" element={<DonateJoinUs />} />
+        <Route path="/donatejoinus" element={<DonateJoinUs />} />
+        <Route path="/visitorfrom" element={<VisitorFrom />} />
       </Route>
 
       {/* Auth pages without Header/Footer */}

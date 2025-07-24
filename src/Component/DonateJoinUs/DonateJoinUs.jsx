@@ -1,7 +1,8 @@
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../Layout/Header';
-import SupportCTA from '../SupportCTA/SupportCTA';
+// import SupportCTA from '../SupportCTA/SupportCTA';
 import Footer from '../../Layout/Footer';
 const DonateJoinUs = () => {
     const [selectedAmount, setSelectedAmount] = useState(50);
@@ -143,7 +144,7 @@ const DonateJoinUs = () => {
             </section>
             {/* Join Us Section */}
             <section className="py-16 bg-gray-50">
-                <div className="max-w-6xl mx-auto px-4">
+                <div className=" mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl font-bold text-gray-900 mb-4">Join Our Mission</h2>
                         <p className="text-lg text-gray-600">There are many ways to get involved and make a difference in our community</p>
@@ -191,9 +192,12 @@ const DonateJoinUs = () => {
                                             <span>Make lasting impact on young lives</span>
                                         </li>
                                     </ul>
-                                    <button className="bg-orange-500 text-white px-8 py-3 !rounded-button font-semibold hover:bg-orange-600 whitespace-nowrap cursor-pointer">
-                                        Apply to Volunteer
-                                    </button>
+                                    <Link to="/visitorfrom">
+                                        <button className="bg-orange-500 text-white px-8 py-3 !rounded-button font-semibold hover:bg-orange-600 whitespace-nowrap cursor-pointer">
+                                            Apply to Volunteer
+                                        </button>
+                                    </Link>
+
                                 </div>
                                 <div className="overflow-hidden rounded-lg">
                                     <img
@@ -233,9 +237,13 @@ const DonateJoinUs = () => {
                                             <span>Career guidance and life skills coaching</span>
                                         </li>
                                     </ul>
-                                    <button className="bg-orange-500 text-white px-8 py-3 !rounded-button font-semibold hover:bg-orange-600 whitespace-nowrap cursor-pointer">
-                                        Become a Mentor
-                                    </button>
+
+                                    <Link to="/visitorfrom">
+                                        <button className="bg-orange-500 text-white px-8 py-3 !rounded-button font-semibold hover:bg-orange-600 whitespace-nowrap cursor-pointer">
+                                            Become a Mentor
+                                        </button>
+                                    </Link>
+
                                 </div>
                             </div>
                         )}
@@ -261,9 +269,12 @@ const DonateJoinUs = () => {
                                             <span>Custom community engagement initiatives</span>
                                         </li>
                                     </ul>
-                                    <button className="bg-orange-500 text-white px-8 py-3 !rounded-button font-semibold hover:bg-orange-600 whitespace-nowrap cursor-pointer">
-                                        Partner with Us
-                                    </button>
+                                    <Link to="/visitorfrom">
+                                        <button className="bg-orange-500 text-white px-8 py-3 !rounded-button font-semibold hover:bg-orange-600 whitespace-nowrap cursor-pointer">
+                                            Partner with Us
+                                        </button>
+                                    </Link>
+
                                 </div>
                                 <div className="overflow-hidden rounded-lg">
                                     <img
@@ -278,7 +289,7 @@ const DonateJoinUs = () => {
                 </div>
             </section>
             {/* Call to Action */}
-            <SupportCTA />
+            {/* <SupportCTA /> */}
 
             {/* Footer */}
             <Footer />
