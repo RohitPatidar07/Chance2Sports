@@ -6,73 +6,54 @@ import Header from '../../Layout/Header';
 const NewsletterEvents = () => {
     const [activeTab, setActiveTab] = useState('newsletters');
     const [currentPage, setCurrentPage] = useState(1);
-    const newsletters = [
-        {
-            id: 1,
-            title: 'Abhinav Sinha Reaches Top 8 in National Games 2015',
-            date: '2024-07-15',
-            image: 'https://static.readdy.ai/image/d02d88b0d280feb932d3d4db548036a1/f0c384f6fb7ac07cc57bc05c82b543e6.png',
-            excerpt: 'Lawyer playing top level squash. Abhinav Sinha from Pune makes Maharashtra proud by reaching the top 8 in the National games. Currently ranked 304 in the world on the International PSA circuit.'
-        },
-        {
-            id: 2,
-            title: 'SportsSkill Fest 2024 - Complete Coverage',
-            date: '2024-07-14',
-            image: 'https://readdy.ai/api/search-image?query=young%20athletes%20celebrating%20victory%20at%20sports%20festival%20with%20medals%20and%20trophies%20in%20bright%20outdoor%20stadium%20setting%20with%20modern%20facilities%20and%20enthusiastic%20crowd&width=400&height=250&seq=news1&orientation=landscape',
-            excerpt: 'Comprehensive coverage of our three-day sports extravaganza featuring over 350 participants from various schools.'
-        },
-        {
-            id: 2,
-            title: 'Training Excellence Program Launch',
-            date: '2024-07-10',
-            image: 'https://readdy.ai/api/search-image?query=professional%20sports%20coaches%20training%20young%20athletes%20in%20modern%20indoor%20facility%20with%20advanced%20equipment%20and%20motivational%20atmosphere&width=400&height=250&seq=news2&orientation=landscape',
-            excerpt: 'Introducing our new comprehensive training program designed to develop champions across multiple sports disciplines.'
-        },
-        {
-            id: 3,
-            title: 'Community Impact Report 2024',
-            date: '2024-07-05',
-            image: 'https://readdy.ai/api/search-image?query=diverse%20group%20of%20young%20athletes%20from%20different%20backgrounds%20training%20together%20in%20bright%20community%20sports%20center%20with%20inspirational%20setting&width=400&height=250&seq=news3&orientation=landscape',
-            excerpt: 'Discover how our programs have transformed lives and created opportunities for aspiring athletes in our community.'
-        },
-        {
-            id: 4,
-            title: 'Championship Winners Spotlight',
-            date: '2024-06-28',
-            image: 'https://readdy.ai/api/search-image?query=champion%20athletes%20holding%20trophies%20and%20medals%20in%20victory%20pose%20with%20bright%20stadium%20lights%20and%20celebratory%20atmosphere&width=400&height=250&seq=news4&orientation=landscape',
-            excerpt: 'Meet our latest champions and learn about their journey to success through dedication and expert training.'
-        },
-        {
-            id: 5,
-            title: 'New Facility Opening Announcement',
-            date: '2024-06-20',
-            image: 'https://readdy.ai/api/search-image?query=modern%20state-of-the-art%20sports%20training%20facility%20with%20advanced%20equipment%20and%20bright%20clean%20interior%20design%20for%20athletic%20development&width=400&height=250&seq=news5&orientation=landscape',
-            excerpt: 'Exciting news about our expanded training facilities equipped with cutting-edge technology and equipment.'
-        },
-        {
-            id: 6,
-            title: 'Youth Development Success Stories',
-            date: '2024-06-15',
-            image: 'https://readdy.ai/api/search-image?query=inspiring%20young%20athletes%20in%20training%20session%20showing%20determination%20and%20focus%20in%20bright%20motivational%20sports%20environment&width=400&height=250&seq=news6&orientation=landscape',
-            excerpt: 'Inspiring stories of young athletes who have achieved remarkable success through our development programs.'
-        }
-    ];
+ const newsletters = [
+    {
+        id: 1,
+        title: 'Abhinav Sinha Reaches Top 8 in National Games 2015',
+        date: '2024-07-15',
+        image: 'https://i.postimg.cc/FHBgsYGv/f0c384f6fb7ac07cc57bc05c82b543e6.png',
+        excerpt: 'Abhinav Sinha, a top squash athlete and lawyer from Pune, made Maharashtra proud by securing a position in the top 8 at the National Games 2015 held in Kerala. Representing Maharashtra as the No. 1 seed, he continues to play at an international level.'
+    },
+    {
+        id: 2,
+        title: 'SportsSkill Featured Among Top Indian Sports Tech Startups',
+        date: '2024-07-14',
+        image: 'https://i.postimg.cc/0jQLmMgf/Screenshot-2025-07-25-125819.png',
+        excerpt: 'Inc42 recognizes SportsSkill as a leading sports tech startup, founded by Abhinav Sinha and Chetan Desai in 2021. The platform helps athletes track performance, set goals, and connect with coaches using data-driven tools.'
+    },
+    {
+        id: 3,
+        title: 'WestBridge Cofounder KP Balaraj Backs SportsSkill',
+        date: '2024-07-10',
+        image: 'https://i.postimg.cc/W1kcXkdY/Screenshot-2025-07-25-125842.png',
+        excerpt: 'SportsSkill secured funding from KP Balaraj, cofounder of WestBridge Capital. He praised the startup’s vision in sports and tech, having mentored the team initially and now investing to support its nationwide outreach and growth.'
+    }
+];
+
     const events = [
-        {
-            id: 1,
-            title: 'Rishikul SportsSkill Fest 2024',
-            date: '2024-07-12 to 2024-07-14',
-            location: 'Rishikul School, Laxmangarh',
-            type: 'Past Event',
-            image: 'https://readdy.ai/api/search-image?query=large%20outdoor%20sports%20festival%20with%20multiple%20athletic%20competitions%20cricket%20badminton%20athletics%20students%20celebrating%20in%20bright%20sunny%20stadium%20environment&width=600&height=400&seq=event1&orientation=landscape',
-            description: 'We are thrilled to announce the successful completion of the SportsSkill Fest, a three-day extravaganza of competitive spirit, athletic excellence, and community unity at Rishikul School, Laxmangarh. Over the course of the event, students from Class 1 to 12, as well as college participants, enthusiastically competed in a variety of sports, including Cricket, Badminton, Athletics, and Fun Games.',
-            highlights: [
-                '350+ students participated',
-                'Multiple sports categories',
-                'Three-day celebration',
-                'Community unity focus'
-            ]
-        },
+       {
+    id: 1,
+    title: 'Rishikul India Sports Championship 2024',
+    date: '2024-07-12 to 2024-07-14',
+    location: 'Rishikul School, Laxmangarh',
+    type: 'Past Event',
+    image: 'https://i.postimg.cc/nrNphYs7/Screenshot-2025-07-25-130626.png',
+    description: `The Rishikul India Sports Championship 2024 was successfully organized at Rishikul School, Laxmangarh, in association with SportsSkill. This three-day event brought together students from various regions to compete in a diverse range of sports disciplines, showcasing their talent, teamwork, and competitive spirit.
+
+Over 350 students from Class 1 to college level enthusiastically participated in events such as athletics, cricket, chess, badminton, and fun games. The championship was not only a platform for athletic performance but also focused on the overall personality development of students through discipline, team coordination, and leadership.
+
+The event was inaugurated in a grand ceremony attended by school leaders, local dignitaries, and coaches. Throughout the fest, a spirit of community and sportsmanship was evident. The organizing team ensured that the event ran smoothly with top-notch facilities and coordination.
+
+This initiative marks a significant step toward encouraging youth participation in physical activities and helping students explore their potential through sports.`,
+    highlights: [
+        '350+ participants from schools and colleges',
+        'Wide variety of sports including athletics, cricket, badminton, and chess',
+        'Focus on discipline, leadership, and personal development',
+        'Organized in collaboration with SportsSkill and Rishikul School',
+        'Strong support from educators, coaches, and local dignitaries'
+    ]
+},
+
         {
             id: 2,
             title: 'Regional Championship Training Camp',
@@ -172,7 +153,7 @@ const NewsletterEvents = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                             {currentNewsletters.map((newsletter) => (
                                 <div key={newsletter.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
-                                    <div className="h-48 overflow-hidden">
+                                    <div className="h-64 overflow-hidden">
                                         <img
                                             src={newsletter.image}
                                             alt={newsletter.title}
@@ -223,7 +204,7 @@ const NewsletterEvents = () => {
                         {/* Featured Event */}
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
                             <div className="md:flex">
-                                <div className="md:w-1/2 h-96 overflow-hidden">
+                                <div className="md:w-1/2 h-full overflow-hidden">
                                     <img
                                         src={events[0].image}
                                         alt={events[0].title}

@@ -21,7 +21,7 @@ const HomePage = () => {
     const stories = [
         {
             name: 'Akanksha Gupta',
-            image: 'https://readdy.ai/api/search-image?query=young%20female%20badminton%20player%20holding%20trophy%20with%20medal%20around%20neck%20wearing%20sports%20attire%20against%20clean%20white%20background%20with%20professional%20lighting&width=300&height=400&seq=akanksha1&orientation=portrait',
+            image: 'https://i.postimg.cc/FHKDHgx7/3.png',
             sport: 'Badminton',
             achievement: 'National Under-19 Champion',
             quote: 'C2S gave me the foundation and mentorship to win my first national title. The free training changed my life.',
@@ -30,7 +30,7 @@ const HomePage = () => {
         },
         {
             name: 'Anika Dubey',
-            image: 'https://readdy.ai/api/search-image?query=confident%20young%20female%20swimmer%20in%20swimming%20cap%20holding%20multiple%20medals%20with%20proud%20expression%20against%20minimalist%20white%20background%20with%20professional%20lighting&width=300&height=400&seq=anika1&orientation=portrait',
+            image: 'https://i.postimg.cc/nhZfR5ZN/1.png',
             sport: 'Swimming',
             achievement: 'State Record Holder',
             quote: 'The scholarship program opened doors I never imagined. Now I represent my state at national championships.',
@@ -39,7 +39,7 @@ const HomePage = () => {
         },
         {
             name: 'Vasundhara Nangare',
-            image: 'https://readdy.ai/api/search-image?query=determined%20young%20female%20athlete%20in%20track%20and%20field%20uniform%20with%20gold%20medal%20displaying%20winning%20pose%20against%20clean%20white%20background%20with%20inspirational%20lighting&width=300&height=400&seq=vasundhara1&orientation=portrait',
+            image: 'https://i.postimg.cc/ZnhwbGfS/2.png',
             sport: 'Athletics',
             achievement: 'Junior Asian Games Qualifier',
             quote: 'From grassroots to international competitions - C2S mentorship made this journey possible.',
@@ -48,7 +48,7 @@ const HomePage = () => {
         },
         {
             name: 'Vivek & Vinay Shinde',
-            image: 'https://readdy.ai/api/search-image?query=twin%20young%20male%20athletes%20in%20wrestling%20gear%20holding%20championship%20medals%20together%20with%20determined%20expressions%20against%20clean%20white%20background%20with%20dynamic%20lighting&width=300&height=400&seq=twins1&orientation=portrait',
+            image: 'https://i.postimg.cc/02V0FKqx/4.png',
             sport: 'Wrestling',
             achievement: 'Twin National Champions',
             quote: 'C2S believed in our potential when others doubted. Now we compete internationally as twin champions.',
@@ -56,26 +56,28 @@ const HomePage = () => {
             ranking: 'Both in Top 5 National Rankings'
         }
     ];
-    const latestUpdates = [
-        {
-            title: 'New Scholarship Program Launched',
-            date: '2024-01-15',
-            image: 'https://readdy.ai/api/search-image?query=diverse%20group%20of%20young%20athletes%20receiving%20scholarship%20certificates%20in%20modern%20ceremony%20hall%20with%20celebratory%20atmosphere%20and%20professional%20lighting&width=400&height=250&seq=update1&orientation=landscape',
-            excerpt: '50 new scholarships awarded to promising athletes across 10 different sports categories.'
-        },
-        {
-            title: 'International Training Camp Success',
-            date: '2024-01-10',
-            image: 'https://readdy.ai/api/search-image?query=young%20athletes%20training%20with%20international%20coaches%20in%20state-of-art%20sports%20facility%20with%20focused%20training%20atmosphere%20and%20professional%20equipment&width=400&height=250&seq=update2&orientation=landscape',
-            excerpt: '15 athletes selected for advanced international training programs with world-class coaches.'
-        },
-        {
-            title: 'Record Breaking Performance',
-            date: '2024-01-05',
-            image: 'https://readdy.ai/api/search-image?query=young%20athlete%20breaking%20finish%20line%20tape%20with%20celebration%20crowd%20in%20background%20during%20championship%20event%20with%20dynamic%20action%20photography&width=400&height=250&seq=update3&orientation=landscape',
-            excerpt: 'C2S athletes set 8 new state records in recent championship competitions.'
-        }
-    ];
+const latestUpdates = [
+  {
+    title: '3-Time National Champion Crowned',
+    date: '2024-01-15',
+    image: 'https://i.postimg.cc/PqTfDJPp/1.png', // Replace with your actual image path or URL
+    excerpt: 'Anika Dubey adds a third national title under the banner of Rolling Nicks – a proud moment for Champions Gurukul and the entire C2S community.'
+  },
+  {
+    title: 'Junior Nationals 2024 – Big Wins in Kolkata',
+    date: '2024-01-10',
+    image: 'https://i.postimg.cc/ZKNJDpNv/2.png', // Replace with your actual image path or URL
+    excerpt: 'Rolling Nicks athletes showcased outstanding performance at the Junior Nationals 2024 in Kolkata, dominating the squash championship podium.'
+  },
+  {
+    title: 'Anika Dubey Shines Again!',
+    date: '2024-01-05',
+    image: 'https://i.postimg.cc/VNKwbFxp/3.png', // Replace with your actual image path or URL
+    excerpt: 'Anika Dubey bags the National Champion title once more, cementing her legacy in squash. A proud win for Rolling Nicks and Champions Gurukul.'
+  }
+];
+
+
     const programs = [
         {
             title: 'Grassroots Development',
@@ -183,35 +185,42 @@ const HomePage = () => {
             <AboutChance2Sports />
 
             {/* Programs Section */}
-            <section className="bg-gray-50">
-                <div className="p-5 mx-auto px-6">
-                    <div className="text-center mb-16">
-                        <h2 className="font-orbitron text-4xl font-bold text-slate-900 mb-4">Our Programs</h2>
-                        <p className="font-inter text-xl text-gray-600 max-w-3xl mx-auto">
-                            Comprehensive programs designed to nurture talent at every stage of athletic development
-                        </p>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {programs.map((program, index) => (
-                            <div key={index} className="bg-white rounded-3xl p-8 shadow-lg card-hover cursor-pointer">
-                                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6">
-                                    <i className={`${program.icon} text-white text-2xl`}></i>
-                                </div>
-                                <h3 className="font-poppins text-xl font-bold text-slate-900 mb-4">{program.title}</h3>
-                                <p className="font-inter text-gray-600 mb-6 leading-relaxed">{program.description}</p>
-                                <div className="space-y-2">
-                                    {program.benefits.map((benefit, benefitIndex) => (
-                                        <div key={benefitIndex} className="flex items-center">
-                                            <i className="fas fa-check text-orange-500 text-sm mr-3"></i>
-                                            <span className="font-inter text-sm text-gray-700">{benefit}</span>
-                                        </div>
-                                    ))}
-                                </div>
+        
+<section className="bg-gray-50">
+    <div className="p-5 mx-auto px-6">
+        <div className="text-center mb-16">
+            <h2 className="font-orbitron text-4xl font-bold text-slate-900 mb-4">Our Programs</h2>
+            <p className="font-inter text-xl text-gray-600 max-w-3xl mx-auto">
+                Comprehensive programs designed to nurture talent at every stage of athletic development
+            </p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {programs.map((program, index) => (
+                <Link to="/grassrootstalent" key={index} className="block h-full">
+                    <div className="bg-white rounded-3xl p-8 shadow-lg card-hover cursor-pointer hover:shadow-2xl transition duration-300 ease-in-out flex flex-col justify-between h-full min-h-[450px]">
+                        <div>
+                            <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6">
+                                <i className={`${program.icon} text-white text-2xl`}></i>
                             </div>
-                        ))}
+                            <h3 className="font-poppins text-xl font-bold text-slate-900 mb-4">{program.title}</h3>
+                            <p className="font-inter text-gray-600 mb-6 leading-relaxed">{program.description}</p>
+                        </div>
+                        <div className="space-y-2 mt-auto">
+                            {program.benefits.map((benefit, benefitIndex) => (
+                                <div key={benefitIndex} className="flex items-center">
+                                    <i className="fas fa-check text-orange-500 text-sm mr-3"></i>
+                                    <span className="font-inter text-sm text-gray-700">{benefit}</span>
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
-            </section>
+                </Link>
+            ))}
+        </div>
+    </div>
+</section>
+
+
 
             {/* Success Stories Section */}
             <section className="py-20 bg-white">

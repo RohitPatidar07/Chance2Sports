@@ -83,9 +83,9 @@ const GrassrootsTalentProgram = () => {
                         <div className="relative">
                             <div className="rounded-2xl overflow-hidden shadow-2xl">
                                 <img
-                                    src="https://readdy.ai/api/search-image?query=diverse%20group%20of%20young%20athletes%20from%20different%20backgrounds%20training%20together%20on%20sports%20court%20with%20professional%20coach%20inspiring%20community%20sports%20development%20photography&width=600&height=400&seq=mission1&orientation=landscape"
+                                    src="https://i.postimg.cc/8PvrBFPt/Whats-App-Image-2025-07-25-at-12-38-53-ebe79f2b.jpg"
                                     alt="Young athletes training"
-                                    className="w-full h-full object-cover object-top"
+                                    className="w-full h-96 object-cover object-top"
                                 />
                             </div>
                         </div>

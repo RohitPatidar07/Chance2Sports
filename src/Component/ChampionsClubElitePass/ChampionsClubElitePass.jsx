@@ -428,36 +428,63 @@ const ChampionsClubElitePass = () => {
                 </div>
             </section>
             {/* Hall of Fame */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-6">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Hall of Fame - National Champions</h2>
-                        <p className="text-lg text-gray-600">Celebrating our champions who have achieved excellence at the highest level</p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div className="bg-gradient-to-br from-yellow-50 to-orange-50 p-6 rounded-xl text-center">
-                            <div className="text-2xl font-bold text-orange-600 mb-2">2023 & 2022</div>
-                            <h3 className="font-bold text-gray-900 mb-1">Anika Dubey</h3>
-                            <p className="text-sm text-gray-600">(Current Champion)</p>
-                        </div>
-                        <div className="bg-gradient-to-br from-yellow-50 to-orange-50 p-6 rounded-xl text-center">
-                            <div className="text-2xl font-bold text-orange-600 mb-2">2020 & 2021</div>
-                            <h3 className="font-bold text-gray-900 mb-1">Abhinav Sinha</h3>
-                            <p className="text-sm text-gray-600">(Professional)</p>
-                        </div>
-                        <div className="bg-gradient-to-br from-yellow-50 to-orange-50 p-6 rounded-xl text-center">
-                            <div className="text-2xl font-bold text-orange-600 mb-2">2019</div>
-                            <h3 className="font-bold text-gray-900 mb-1">Akanksha Gupta</h3>
-                            <p className="text-sm text-gray-600">(Youngest Champion)</p>
-                        </div>
-                        <div className="bg-gradient-to-br from-yellow-50 to-orange-50 p-6 rounded-xl text-center">
-                            <div className="text-2xl font-bold text-orange-600 mb-2">2017 & 2018</div>
-                            <h3 className="font-bold text-gray-900 mb-1">Yoshna Singh</h3>
-                            <p className="text-sm text-gray-600">(First from Pune)</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+    {/* Heading */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-gray-900 mb-4">Hall of Fame - National Champions</h2>
+      <p className="text-lg text-gray-600">
+        Celebrating our champions who have achieved excellence at the highest level
+      </p>
+    </div>
+
+    {/* Image Row Section (3 champions + Yoshna) */}
+    <div className="flex flex-col lg:flex-row gap-8 items-start">
+      {/* Shared Image for First 3 */}
+      <div className="flex-1 text-center">
+        <img
+          src="https://i.postimg.cc/Cx0qxFH5/Whats-App-Image-2025-07-25-at-12-18-56-ab6f5abd.jpg" // 🔁 Replace with actual group image URL
+          alt="Anika, Abhinav, Akanksha"
+          className="w-full h-96 object-cover rounded-xl shadow-md mb-4"
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div>
+            <div className="text-xl font-bold text-orange-600 mb-1">2023 & 2022</div>
+            <h3 className="font-bold text-gray-900">Anika Dubey</h3>
+            <p className="text-sm text-gray-600">(Current Champion)</p>
+          </div>
+          <div>
+            <div className="text-xl font-bold text-orange-600 mb-1">2020 & 2021</div>
+            <h3 className="font-bold text-gray-900">Abhinav Sinha</h3>
+            <p className="text-sm text-gray-600">(Professional)</p>
+          </div>
+          <div>
+            <div className="text-xl font-bold text-orange-600 mb-1">2019</div>
+            <h3 className="font-bold text-gray-900">Akanksha Gupta</h3>
+            <p className="text-sm text-gray-600">(Youngest Champion)</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Yoshna Singh Section */}
+      <div className="flex-1 text-center">
+        <img
+          src="https://i.postimg.cc/KYqkftX3/Whats-App-Image-2025-07-25-at-12-18-56-eafad0e2.jpg" // 🔁 Replace with Yoshna's image URL
+          alt="Yoshna Singh"
+          className="w-full h-96 object-cover rounded-xl shadow-md mb-4"
+        />
+        <div >
+          <div className="text-xl font-bold text-orange-600 mb-1">2017 & 2018</div>
+          <h3 className="font-bold text-gray-900 mb-1">Yoshna Singh</h3>
+          <p className="text-sm text-gray-600">(First from Pune)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
             {/* Success Stories */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-6">

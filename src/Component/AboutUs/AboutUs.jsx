@@ -121,7 +121,7 @@ const AboutUs = () => {
                         <div className="bg-white p-8 !rounded-button shadow-lg">
                             <div className="flex flex-col items-center text-center">
                                 <img
-                                    src="https://readdy.ai/api/search-image?query=Professional%20Indian%20businessman%20in%20formal%20attire%20confident%20expression%20modern%20office%20background%20clean%20portrait%20photography%20professional%20lighting%20business%20executive&width=300&height=300&seq=abhinav-sinha&orientation=squarish"
+                                    src="https://i.postimg.cc/jjrZK0C4/1.png"
                                     alt="Abhinav Sinha"
                                     className="w-32 h-32 rounded-full object-cover object-top mb-6"
                                 />
@@ -139,7 +139,7 @@ const AboutUs = () => {
                         <div className="bg-white p-8 !rounded-button shadow-lg">
                             <div className="flex flex-col items-center text-center">
                                 <img
-                                    src="https://readdy.ai/api/search-image?query=Senior%20Indian%20tennis%20professional%20experienced%20coach%20with%20tennis%20racket%20sports%20facility%20background%20confident%20mature%20expression%20professional%20sports%20attire&width=300&height=300&seq=chetan-desai&orientation=squarish"
+                                    src="https://i.postimg.cc/K8hn37FZ/2.png"
                                     alt="Chetan Desai"
                                     className="w-32 h-32 rounded-full object-cover object-top mb-6"
                                 />
@@ -169,7 +169,7 @@ const AboutUs = () => {
                         <div className="bg-gradient-to-br from-blue-50 to-orange-50 p-8 !rounded-button">
                             <div className="flex items-start space-x-6">
                                 <img
-                                    src="https://readdy.ai/api/search-image?query=Distinguished%20Indian%20squash%20champion%20senior%20athlete%20with%20trophy%20professional%20sports%20portrait%20confident%20expression%20formal%20attire%20sports%20hall%20background&width=200&height=200&seq=anil-nayar&orientation=squarish"
+                                    src="https://i.postimg.cc/V6vMPD9F/3.png"
                                     alt="Anil Nayar"
                                     className="w-24 h-24 rounded-full object-cover object-top"
                                 />
@@ -191,7 +191,7 @@ const AboutUs = () => {
                         <div className="bg-gradient-to-br from-orange-50 to-blue-50 p-8 !rounded-button">
                             <div className="flex items-start space-x-6">
                                 <img
-                                    src="https://readdy.ai/api/search-image?query=Senior%20Indian%20sports%20administrator%20executive%20formal%20business%20attire%20confident%20professional%20expression%20modern%20office%20background%20distinguished%20appearance&width=200&height=200&seq=naval-pandole&orientation=squarish"
+                                    src="https://i.postimg.cc/bNkm5www/4.png"
                                     alt="Naval Pandole"
                                     className="w-24 h-24 rounded-full object-cover object-top"
                                 />
