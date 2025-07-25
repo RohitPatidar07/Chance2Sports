@@ -31,7 +31,7 @@ const Footer = () => {
 
                 {/* Footer Content */}
                 <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
-                    <div className="grid md:grid-cols-3 gap-10">
+                    <div className="grid md:grid-cols-4 gap-10">
                         {/* Logo + About */}
                         <div>
                             <Link to="/" className="inline-block mb-4">
@@ -58,6 +58,29 @@ const Footer = () => {
                                 <li><Link to="/newsletter" className="hover:text-orange-500 transition">Newsletters & Events</Link></li>
                                 <li><Link to="/visitorfrom" className="hover:text-orange-500 transition">Contact</Link></li>
                             </ul>
+                        </div>
+
+                        {/* Address Information */}
+                        <div>
+                            <h4 className="font-poppins text-lg font-semibold mb-4">Contact Us</h4>
+                            <address className="not-italic text-sm font-inter space-y-3">
+                                <div className="flex items-start gap-3">
+                                    <i className="fas fa-map-marker-alt mt-1 text-orange-500"></i>
+                                    <p>123 Sports Avenue, Athlete District<br />Mumbai, Maharashtra 400001</p>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <i className="fas fa-phone-alt text-orange-500"></i>
+                                    <p>+91 98765 43210</p>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <i className="fas fa-envelope text-orange-500"></i>
+                                    <p>info@chance2sports.org</p>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <i className="fas fa-clock text-orange-500"></i>
+                                    <p>Mon-Fri: 9AM - 6PM</p>
+                                </div>
+                            </address>
                         </div>
 
                         {/* Social Links */}
