@@ -5,6 +5,7 @@ import "./HomePage.css"
 import Header from '../../Layout/Header';
 import Footer from '../../Layout/Footer';
 import SupportCTA from '../SupportCTA/SupportCTA';
+import AboutChance2Sports from './AboutChance2Sports';
 const HomePage = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [currentStory, setCurrentStory] = useState(0);
@@ -160,23 +161,26 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col sm:flex-row gap-4 mb-8 text-reveal" style={{ animationDelay: '0.9s' }}>
-                              <Link to="/donatejoinus">
-                                <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 !rounded-button font-inter font-semibold pulse-glow hover:from-orange-600 hover:to-orange-700 transition-all whitespace-nowrap cursor-pointer">
-                                    Join Our Programs
-                                </button>
-                              </Link>
+                                <Link to="/donatejoinus">
+                                    <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 !rounded-button font-inter font-semibold pulse-glow hover:from-orange-600 hover:to-orange-700 transition-all whitespace-nowrap cursor-pointer">
+                                        Join Our Programs
+                                    </button>
+                                </Link>
 
-                             <Link to="/aboutus">
-                                <button className="neon-border bg-transparent px-8 py-4 !rounded-button font-inter font-semibold whitespace-nowrap cursor-pointer">
-                                    Read More About Us
-                                </button>
-                             </Link>
+                                <Link to="/aboutus">
+                                    <button className="neon-border bg-transparent px-8 py-4 !rounded-button font-inter font-semibold whitespace-nowrap cursor-pointer">
+                                        Read More About Us
+                                    </button>
+                                </Link>
 
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            {/* AboutChance2Sports */}
+            <AboutChance2Sports />
 
             {/* Programs Section */}
             <section className="bg-gray-50">
