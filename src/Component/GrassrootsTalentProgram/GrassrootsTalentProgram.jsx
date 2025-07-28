@@ -48,6 +48,20 @@ const GrassrootsTalentProgram = () => {
         <div className="min-h-screen bg-white">
         {/* Header */}
         <Header/>
+
+{/* Hero Section - Program Introduction */}
+<section className="relative bg-gray-50 py-16">
+  <div className="max-w-7xl mx-auto px-6 text-center">
+    <h1 className="text-4xl font-bold text-gray-900 mb-4">
+      Grassroots Talent Development
+    </h1>
+    <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+      <strong>Chance2Sports</strong>, under the guidance of <strong>Abhinav Sinha</strong>, a highly accomplished international squash player and visionary coach, has been fostering junior national champions from diverse backgrounds since <strong>2017</strong>.
+    </p>
+  </div>
+</section>
+
+
             {/* Mission Overview */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-6">

@@ -110,6 +110,19 @@ const AboutUs = () => {
                     </div>
                 </div>
             </section>
+
+
+{/* ✨ New Journey Reflection Section */}
+<section className="py-12 bg-orange-50">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+    <h3 className="text-4xl font-bold text-gray-900 mb-4">Our journey continues</h3>
+    <p className="text-lg text-gray-700 leading-relaxed">
+      Our journey is proof that with hard work, focus, and passion, dreams can become reality.
+      Stay tuned for more milestones as we continue to inspire and uplift the sports community!
+    </p>
+  </div>
+</section>
+
             {/* Leadership Team */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-6">

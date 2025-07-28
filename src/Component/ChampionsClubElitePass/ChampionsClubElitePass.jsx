@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import Header from '../../Layout/Header';
 import Footer from '../../Layout/Footer';
+import SupportCTA from '../SupportCTA/SupportCTA';
+
+import TalentIdentificationSection from './TalentIdentificationSection';
 const ChampionsClubElitePass = () => {
     const [activeTab, setActiveTab] = useState('stage1');
     return (
@@ -51,73 +54,7 @@ const ChampionsClubElitePass = () => {
                 </div>
             </section>
             {/* Talent Identification Section */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-6">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Talent Identification Process</h2>
-                        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            Our comprehensive identification process is based on national and international rankings, ensuring we support the most promising athletes.
-                        </p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                        <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-                            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <i className="fas fa-search text-orange-500 text-2xl"></i>
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Scouting</h3>
-                            <p className="text-gray-600 mb-4">Identification of talented athletes through comprehensive scouting networks</p>
-                            <div className="text-sm text-orange-500 font-medium">Stage 1</div>
-                        </div>
-                        <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-                            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <i className="fas fa-chart-line text-orange-500 text-2xl"></i>
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Assessment</h3>
-                            <p className="text-gray-600 mb-4">Detailed evaluation based on performance metrics and potential</p>
-                            <div className="text-sm text-orange-500 font-medium">Stage 2</div>
-                        </div>
-                        <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-                            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <i className="fas fa-users text-orange-500 text-2xl"></i>
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Selection</h3>
-                            <p className="text-gray-600 mb-4">Rigorous selection process for elite program participation</p>
-                            <div className="text-sm text-orange-500 font-medium">Stage 3</div>
-                        </div>
-                        <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-                            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <i className="fas fa-trophy text-orange-500 text-2xl"></i>
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Development</h3>
-                            <p className="text-gray-600 mb-4">Comprehensive training and development programs</p>
-                            <div className="text-sm text-orange-500 font-medium">Stage 4</div>
-                        </div>
-                    </div>
-                    <div className="mt-12 bg-white p-8 rounded-xl shadow-lg">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Selection Criteria</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div className="flex items-center space-x-4">
-                                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
-                                    <i className="fas fa-globe text-orange-500"></i>
-                                </div>
-                                <div>
-                                    <h4 className="font-bold text-gray-900">International Rankings</h4>
-                                    <p className="text-gray-600">Top 16 in International Rankings</p>
-                                </div>
-                            </div>
-                            <div className="flex items-center space-x-4">
-                                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
-                                    <i className="fas fa-flag text-orange-500"></i>
-                                </div>
-                                <div>
-                                    <h4 className="font-bold text-gray-900">National Rankings</h4>
-                                    <p className="text-gray-600">Top 8 in National Rankings</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <TalentIdentificationSection/>
             {/* Elite Athletes Section */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-6">
@@ -573,6 +510,10 @@ const ChampionsClubElitePass = () => {
                     </div>
                 </div>
             </section>
+
+  {/* Support CTA */}
+            <SupportCTA/>
+
             {/* Footer */}
       <Footer/>
         </div>
