@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion, useMotionValue, useTransform, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-// Card Data
 const floatingCards = [
   {
     icon: 'fas fa-search',
@@ -34,7 +33,6 @@ const floatingCards = [
   }
 ];
 
-// Card positioning logic
 const getCardPosition = (angle, radius) => {
   const rad = (angle * Math.PI) / 180;
   return {
@@ -45,17 +43,17 @@ const getCardPosition = (angle, radius) => {
 
 const TalentIdentificationSection = () => {
   const [selectedCard, setSelectedCard] = useState(null);
-  const radius = 130;
+  const radius = 150;
   const rotate = useMotionValue(0);
 
   return (
-    <section className="py-20 bg-gray-900 text-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+    <section className="py-20 bg-gray-900 text-white relative overflow-visible">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative">
 
-        {/* Left: Floating Rotating Cards */}
-        <div className="relative w-full flex justify-center items-center">
+        {/* Left: Rotating Cards */}
+        <div className="relative w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] h-[320px] sm:h-[360px] md:h-[400px] mx-auto md:mx-0">
           <motion.div
-            className="relative w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] rounded-full border border-white border-opacity-20"
+            className="absolute top-0 left-0 w-full h-full rounded-full border border-white border-opacity-20"
             animate={{ rotate: 360 }}
             style={{ rotate }}
             transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
@@ -75,12 +73,10 @@ const TalentIdentificationSection = () => {
                   className="cursor-pointer"
                 >
                   <motion.div
-                    style={{
-                      rotate: useTransform(rotate, r => -r)
-                    }}
-                    className="w-24 h-24 sm:w-28 sm:h-28 bg-white text-center rounded-2xl shadow-xl flex flex-col items-center justify-center text-black"
+                    style={{ rotate: useTransform(rotate, (r) => -r) }}
+                    className="w-24 sm:w-28 h-24 sm:h-28 bg-white text-center rounded-2xl shadow-xl flex flex-col items-center justify-center text-black"
                   >
-                    <i className={`${card.icon} text-orange-500 text-lg sm:text-xl mb-1`}></i>
+                    <i className={`${card.icon} text-orange-500 text-xl mb-1`}></i>
                     <p className="text-xs font-semibold">{card.title} ↗</p>
                   </motion.div>
                 </motion.div>
@@ -91,7 +87,7 @@ const TalentIdentificationSection = () => {
 
         {/* Right: Description */}
         <div>
-          <h2 className="text-3xl sm:text-4xl font-semibold text-orange-500 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-orange-500 mb-6">
             Talent Identification Process
           </h2>
           <p className="text-base sm:text-lg text-gray-300 mb-8 leading-relaxed">
@@ -100,38 +96,37 @@ const TalentIdentificationSection = () => {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="flex items-start space-x-4">
+            <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
                 <i className="fas fa-globe text-orange-600 text-xl"></i>
               </div>
               <div>
-                <h4 className="font-bold text-white text-sm sm:text-base">International Rankings</h4>
+                <h4 className="font-bold text-white">International Rankings</h4>
                 <p className="text-sm text-gray-300">Top 16 in International Rankings</p>
               </div>
             </div>
-            <div className="flex items-start space-x-4">
+            <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
                 <i className="fas fa-flag text-orange-600 text-xl"></i>
               </div>
               <div>
-                <h4 className="font-bold text-white text-sm sm:text-base">National Rankings</h4>
+                <h4 className="font-bold text-white">National Rankings</h4>
                 <p className="text-sm text-gray-300">Top 8 in National Rankings</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Right Panel Slide-in */}
+        {/* Right Slide-In Panel (fixed width, stays on side) */}
         <AnimatePresence>
           {selectedCard && (
             <motion.div
-              className="fixed top-0 right-0 h-full w-full sm:w-[90%] md:w-[480px] bg-white z-40 px-6 py-8 shadow-2xl rounded-tl-[80px] sm:rounded-tl-[160px] overflow-y-auto border-l border-gray-300 flex flex-col"
+              className="absolute top-0 right-0 h-full w-[480px] max-w-full bg-white z-50 px-6 py-8 shadow-2xl rounded-tl-[180px] overflow-y-auto border-l border-gray-700 flex flex-col"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', stiffness: 100, damping: 20 }}
             >
-              {/* Header */}
               <div className="flex justify-between items-start mb-6 relative">
                 <div className="flex flex-col items-center w-full mt-4">
                   <i className={`${selectedCard.icon} text-green-400 text-3xl mb-2`} />
@@ -141,22 +136,20 @@ const TalentIdentificationSection = () => {
                 </div>
                 <button
                   onClick={() => setSelectedCard(null)}
-                  className="absolute right-0 top-0 text-3xl text-black hover:text-gray-700"
+                  className="absolute right-0 top-0 text-3xl text-black hover:text-black-400"
                 >
                   &times;
                 </button>
               </div>
 
-              {/* Content */}
               <div className="flex-1 overflow-y-auto pr-1">
-                <p className="text-black text-sm sm:text-base leading-relaxed">
+                <p className="text-black leading-relaxed">
                   {selectedCard.content}
                 </p>
               </div>
 
-              {/* CTA */}
               <div className="mt-8">
-                <Link to="/visitorfrom">
+                <Link to='/visitorfrom'>
                   <button className="w-full px-6 py-3 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">
                     REGISTER
                   </button>
