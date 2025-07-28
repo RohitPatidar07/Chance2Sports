@@ -8,7 +8,7 @@ const Footer = () => {
                 {/* Wave Animation */}
                 <div className="absolute top-0 left-0 w-full overflow-hidden">
                     <svg
-                        className="relative block w-full h-16 wave-animation"
+                        className="w-full h-16 block"
                         viewBox="0 0 1200 120"
                         preserveAspectRatio="none"
                     >
@@ -28,6 +28,7 @@ const Footer = () => {
                         />
                     </svg>
                 </div>
+
 
                 {/* Footer Content */}
                 <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
