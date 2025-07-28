@@ -47,7 +47,7 @@ const TalentIdentificationSection = () => {
   const rotate = useMotionValue(0);
 
   return (
-    <section className="py-20 bg-gray-900 text-white relative overflow-visible">
+    <section className="py-20 bg-gray-900 text-white relative  overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative">
 
         {/* Left: Rotating Cards */}
