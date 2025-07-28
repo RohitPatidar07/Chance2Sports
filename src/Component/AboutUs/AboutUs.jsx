@@ -22,7 +22,7 @@ const AboutUs = () => {
             <Header/>
 
             {/* Hero Section */}
-            <section className="relative h-96  overflow-hidden">
+            <section className=" relative h-96  overflow-hidden" >
                 <div className="absolute inset-0">
                     <img
                         src="https://i.postimg.cc/mZJ4Hk1p/7d8787172662ed7b86e743b3b5cefa67.jpg"

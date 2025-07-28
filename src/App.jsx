@@ -8,13 +8,14 @@ import Login from "./Auth/Login";
 import Signup from "./Auth/Signup";
 import DonateJoinUs from "./Component/DonateJoinUs/DonateJoinUs";
 import VisitorFrom from "./Component/VisitorFrom/VisitorFrom";
-
+import ScrollToTop from "./Layout/ScrollToTop";
 
 function App() {
   return (
-    <Routes>
-      {/* Public routes with Header/Footer */}
-      <Route>
+    <>
+      <ScrollToTop />
+      <Routes>
+        {/* Public routes */}
         <Route path="/" element={<HomePage />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/championsclub" element={<ChampionsClubElitePass />} />
@@ -22,12 +23,12 @@ function App() {
         <Route path="/newsletter" element={<NewsletterEvents />} />
         <Route path="/donatejoinus" element={<DonateJoinUs />} />
         <Route path="/visitorfrom" element={<VisitorFrom />} />
-      </Route>
 
-      {/* Auth pages without Header/Footer */}
-      <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<Signup />} />
-    </Routes>
+        {/* Auth routes */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+    </>
   );
 }
 
